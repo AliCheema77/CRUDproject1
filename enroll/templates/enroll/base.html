@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'enroll/css/bootstrap.min.css' %}">
+    <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
+    <script>
+    window.OneSignal = window.OneSignal || [];
+    OneSignal.push(function() {
+    OneSignal.init({
+      appId: "c5b8d63c-82c8-4ec1-b1ea-c03c9046ef5b",
+    });
+    });
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1 class="alert alert-info text-center">This is my first CRUD project Django</h1>
+        {% block content %}{% endblock content %}
+    </div>
+    
+
+
+    <script src="{% static 'enroll/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'enroll/js/jquery.js' %}"></script>
+</body>
+</html>
